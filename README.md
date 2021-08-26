@@ -17,6 +17,8 @@ Sowohl `python3` und der Paket-Installer `pip3` wie auch die Programmierumgebung
 - [Python Tutor](https://pythontutor.com/)
 - [Online Python](https://www.online-python.com/)
 
+# Aufgaben
+- [Aufgabe 1](https://classroom.github.com/a/UNwqoiUj)
 
 # Themen
 
