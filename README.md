@@ -1,23 +1,19 @@
 # Installation
 
 ## MS Windows
+.
+Empfohlen wird die portable Python-Installation [WinPython](https://github.com/winpython/winpython), Version 3.9.5. vom 4. Juli 2021 Diese enthält alle Module (inklusive math, cmath, numpy, pygame), die wir in diesem Semester benötigen werden. WinPython enthält die Python-Programmierumgebung Spyder, mit der wir arbeiten werden.
 
-Empfohlen wird die portable Python-Installation [WinPython](https://github.com/winpython/winpython), Version 3.9.5. vom 4. Juli 2021. Diese enthält alle Module (inklusive math, cmath, numpy, pygame), die wir in diesem Semester benötigen werden. WinPython enthält die Python-Programmierumgebung Spyder, mit der wir arbeiten werden.
+Für eine leistungsfähige Konsole und Arbeit mit `Git`-Repositories wird [PortableGit](https://github.com/git-for-windows/git) empfohlen, Version 2.33.0.2 vom 17. August 2021. 
 
-Für eine leistungsfähige Konsole und Arbeit mit `Git`-Repositories wird der portable [Cmder](https://github.com/cmderdev/cmder/) empfohlen, Version 1.3.18 vom 26. März 2021. 
-
-WinPython und der Cmder sollen ins gleiche Verzeichnis extrahiert werden (z.B. das Wurzel-Verzeichnis `D:` oder `E:` für ein USB-Stick). Ausserdem soll in das Verzeichnis `cmder\bin\` die [winpy.bat](https://raw.githubusercontent.com/KS-Limmattal/infos-and-snippets/main/winpy.bat) Datei reinkopiert werden, damit WinPython mit Git verbunden wird. Doppelklick auf `winpy.bat` im Datei-Manager sollte nun eine Konsole öffnen, in welcher auch `git` verfügbar ist.
-
-![grafik](https://user-images.githubusercontent.com/40485433/131105413-4bb5b956-cf09-49db-a99f-0b31dc44a3d7.png)
-
-Um `winpy.bat` direkt im Verzeichnis auszuführen, welches WinPython und Cmder enthält, wird am besten in `\cmder\bin\` mittels Rechtsklick "Verknüpfung erstellen" eine Verknüpfung zu `winpy.bat` erstellt. Die Verknpüfung wird nun ins Verzeichnis mit WinPython und Cmder verschoben. Ausserdem erstellen wir in diesem Verzeichnis einen Ordner `MyCode`, in welcher der eigene Python Code platziert wird.
+PortableGit soll in einen Ordner `PortableGit` im Ordner installiert werden, in welchem bereits WinPython installiert ist (z.B. im Wurzel-Verzeichnis `D:` oder `E:` für ein USB-Stick). Git wird mittels der
+Kommandozeile `git-bash` verwendet. Um `gitbash` direkt aus dem Ordner auszuführen, welches `WinPython` und `PortableGit` enthält, wird am besten von `git-bash.exe` mittels Rechtsklick "Verknüpfung erstellen" eine Verknüpfung erstellt. Die Verknpüfung wird nun ins Verzeichnis mit `WinPython` und `PortableGit` verschoben. Ausserdem erstellen wir in diesem Verzeichnis einen Ordner `MyCode`, in welcher der eigene Python Code platziert wird.
 
 Die Ordner-Struktur sollte nun wie folgt aussehen:
-![grafik](https://user-images.githubusercontent.com/40485433/131106065-ccaf28fd-67cb-431a-a7ca-965f2c93d520.png)
+![grafik](https://user-images.githubusercontent.com/40485433/131446510-0f393315-001b-4161-b1a6-75ff74f86606.png)
 
-Durch Rechtklick auf die Verknüpfung auf winpy.bat können wir das Verzeichnis, in welchem das Terminal gestartet wird, auf unser eigenes Code-Verzeichnis setzen:
-![grafik](https://user-images.githubusercontent.com/40485433/131131491-02db0183-45ad-49c1-adb3-4c65fbd4087f.png)
-
+Durch Rechtklick auf die Verknüpfung auf `git-bash.exe` können wir das Verzeichnis, in welchem das Terminal gestartet wird, auf unser eigenes Code-Verzeichnis setzen:
+![grafik](https://user-images.githubusercontent.com/40485433/131446801-2b9c42b5-4374-43c9-8c7e-01e20851b617.png)
 
 ## MacOS
 
@@ -33,6 +29,27 @@ Sowohl `python3`, der Paket-Installer `pip3` wie auch die Programmierumgebung `s
 
 - [Python Tutor](https://pythontutor.com/)
 - [Online Python](https://www.online-python.com/)
+
+# Arbeit mit Git
+
+`Git` ist ein leistungsfähiges Versionskontroll-System, welches besonders gut beim Programmieren eingesetzt werden kann.
+Gerade bei Zusammenarbeit von mehreren ProgrammiererInnen ist ein Versionskontroll-System unabdingbar, da so mehrere Personen
+unabhängig am gleichen Projekt arbeiten können. Es bietet aber auch für einzelne ProgrammiererInnen viele Vorteile. 
+Zum Beispiel lassen sich Änderungen an den Teilen des Projekts schnell inspizieren, modifizieren oder rückgängig machen.
+Ausserdem kann an verschiedenen Projekt-Features unabhängig gearbeitet werden.
+
+Jedes Programmierprojekt wird in einem `Repository` abgelegt. Dies ist ein virtueller Speicher, welches aus der Kollektion 
+der Dateien des Projekts und Metadata zur Versionskontrolle besteht. Jede substanzielle Code-Änderung 
+wird in einem `Commit` zur Projekt-Geschichte hinzugefügt und mit einer Überschrift betitelt.
+`Github` ist ein internet-basierter Dienst zum Einsatz von `Git`. Die Projekt-Geschichte lässt sich mittels 
+```
+git log
+```
+anzeigen. Zum Beispiel sieht die Projekt-Geschichte zum infos-and-snippets Repository momentan wie folgt aus:
+
+![grafik](https://user-images.githubusercontent.com/40485433/131213722-0036b625-5480-4bc8-9c74-214081c4cc6d.png)
+
+Es ist daraus also ersichtlich, wer wann welche Commits gemacht hat und was damit bezweckt werden sollte.
 
 # Aufgaben
 - [Aufgabe 1](https://classroom.github.com/a/UNwqoiUj)
