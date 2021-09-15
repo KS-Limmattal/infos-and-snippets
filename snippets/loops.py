@@ -19,3 +19,21 @@ inp = ""
 while inp!="Ende":
     inp = input("Möchten Sie noch was sagen? Sag 'Ende' um abzubrechen: ")
     print(f"Sie sagen: {inp}")
+
+# Vorzeitiger Ausstieg aus Schleife mittels "break"
+print("Du darfst dreimal raten, wie ich heisse. Wenn du es nicht errätst, gehört mir dein erstes Kind. ")
+for i in range(1,4):
+    antwort = input(f"Wie heisse ich? {i}. Versuch: ")
+    if antwort=="Rumpelstilzchen":
+        print("Das hat dir der Teufel gesagt!!")
+        break
+
+# Ausstieg aus Unendlich-Schleife
+zahl = 7
+print("Errate meine Lieblingszahl")
+while True:
+    tipp = int(input("Tipp: "))
+    if tipp==zahl:
+        print("Gratuliere. Du hast meine Lieblingszahl erraten!")
+        break
+    
