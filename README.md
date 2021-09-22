@@ -61,6 +61,7 @@ Es ist daraus also ersichtlich, wer wann welche Commits gemacht hat und was dami
 # Aufgaben
 - [Aufgabe 1](https://classroom.github.com/a/UNwqoiUj)
 - [Aufgabe 2](https://classroom.github.com/a/c8MHVeSV)
+- [Aufgabe 3](https://classroom.github.com/a/RbFJzWco)
 
 # Themen
 
