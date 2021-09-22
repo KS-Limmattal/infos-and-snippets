@@ -24,7 +24,7 @@ r = e/f         # Gewöhnliche Division
 import math as m                  
 s = m.sqrt(e) - m.cos(m.pi/2)     # elementare Funktionen und Konstanten
 t = m.floor(e) + m.ceil(f)        # abrunden bzw. aufrunden
-u = m.hypot(e,f)                  # m.sqrt(e**+f**2), funktioniert auch mit mehr als 2 Argumenten und vermeidet Überlauf bei grossen Argumenten
+u = m.hypot(e,f)                  # m.sqrt(e**2+f**2), funktioniert auch mit mehr als 2 Argumenten und vermeidet Überlauf bei grossen Argumenten
 
 
 ## Zum Rechnen mit komplexen Zahlen braucht es das "cmath" Modul; Die Zahl i wird dabei durch 1j repräsentiert
@@ -39,6 +39,8 @@ r = abs(c4)                       # Direkte Berechnung des Betrags
 phi = cm.phase(c4)                # Direkte Berechnung des Winkels
 
 c6 = cm.rect(r, phi)              # Darstellung in Form a+b*j
+x = c6.real                       # Realteil
+y = c6.imag                       # Imaginärteil
 
 
 ## Für das Rechnen mit Matrizen empfiehlt isch die Verwendung des "numpy" Moduls
@@ -50,6 +52,11 @@ m2 = m1.T                                                         # Transponiert
 m3=m1*m2                                                          # Matrix-Produkt
 m4=m3**5                                                          # Matrix-Potenz
 m5=2*m3+5*m4                                                      # Addition und Multiplikation mit Skalar
+
+m6=m5[1:3,1:3]                                                    # Matrix gebildet aus Zeilen 1-2 und Spalten
+                                                                  # Nummerierung beginnt bei 0
+form=m6.shape                                                     # Form der Matrix m6, hier (3,4)
+m7=np.zeros(form)                                                 # 0-Matrix von der gleichen Form wie m6
 
 d =np.linalg.det(m5)                                              # Determinante
 i = np.linalg.inv(m5)                                             # Inverse
