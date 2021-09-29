@@ -1,35 +1,20 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Schreiben Sie ein Programm mit 
-Eingabe: eine komplexe Zahl c (in der Form a+bj)
-Ausgabe: Benachrichtigung darüber, ob c zur Mandelbrot-Menge gehört.
+Schreiben Sie ein Programm, welches die Eulersche Zahl e = 1 + 1/1! + 1/2! + 1/3! + ... 
+auf eine vom Benutzer vorgegebene Nachkommastellen-Anzahl genau berechnet. Arbeiten Sie dazu mit 
+Ganzzahl-Arithmetik
 
-Die Mandelbrot-Menge besteht aus allen komplexen Zahlen c, für welche die Folge z_0; z_1; z_2; ...
-definiert durch z_0 = 0; z_(n+1) = z_n^2 + c beschränkt ist.
-
-Für Unbeschränktheit dieser Folge genügt dabei, dass ein Folgenglied betragsmässig > 2 ist.
-Da nicht unendlich viele Folgenglieder berechnet werden können, werden in der Praxis nur 
-eine feste Anzahl (z.B. 100) Folgelieder betrachtet.
-
-Zusatz: Visualisiere die Mandelbrot-Menge 
-(z.B. mit Hilfe des mathplotlib-Moduls via pyplot.imshow(T), 
- wobei T ein numpy-array ist, welches die Zugehörigkeit zur Mandelbrot-Menge 
- im Rechteck mit -2<= Re(c) <= 1, -1 <= Im(c) <=1 codiert)
+Beispiel: Eingabe (für Nachkommastellen-Anzahl) 5; Ausgabe: e=2.71828
 """
 
-from cmath import *
-c = complex(input("Geben Sie eine komplexe Zahl in der Form a+bj ein! c = "))
+N = int(input("Wie viele Nachkommastellen der Eulerschen Zahl sollen berechnet werden? N = "))
+s = 10**(N+2) # Rechne mit 2 zusätzlichen Stellen
+e = s
+i = 0
 
-N = 100 
-z = 0
-enthalten = True
+while s > 0:
+    i+=1
+    s//=i    # Ganzzahl-Division
+    e+=s
 
-for i in range(N):
-    z = z**2 + c
-    if abs(z) > 2:
-        enthalten = False
-        break
-
-wort = "" if enthalten else "nicht "
-print(f"Die Zahl {c} ist {wort}in der Mandelbrotmenge enthalten")
+print(f"Die Eulersche Zahl auf N Nachkommastellen: e =  {e // 10**(N+2)}.{(e - 2*10**(N+2)) // 100}")
