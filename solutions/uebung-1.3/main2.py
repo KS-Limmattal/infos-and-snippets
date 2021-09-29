@@ -5,14 +5,14 @@ Schreiben Sie ein Programm, welches zu einer (nicht unbedingt invertierbaren) ge
 Adjungierte (gebildet durch Determinanten von Streichmatrizen) berechnet
 Überprüfen Sie Ihr Ergebnis, indem Sie die Adjungierte mit der ursprünglichen Matrix multiplizieren
 
-Bsp: A = np.matrix([[1,2,3],[4,5,6],[7,8,9]])           (vorgegeben)
-     Adj = np.matrix([[-3,6,-3],[6,-12,6],[-3,6,-3]])   (berechnet)
+Bsp: A = np.marray([[1,2,3],[4,5,6],[7,8,9]])           (vorgegeben)
+     Adj = np.array([[-3,6,-3],[6,-12,6],[-3,6,-3]])    (berechnet)
      
 Zusatz: Lassen Sie den Benutzer die Matrix eingeben
 """
 
 import numpy as np
-A = np.matrix([[1,2,3],[4,5,6],[7,8,9]])
+A = np.array([[1,2,3],[4,5,6],[7,8,9]])
 
 n = A.shape[0]  # Anzahl Zeilen, sollte mit Anzahl Spalten übereinstimmen
 
@@ -27,4 +27,4 @@ for i in range(n):
         streichmatrix[i:,j:] = A[i+1:,j+1:]            # rechts unten
         Adj[i,j]=(-1)**(i+j)*np.linalg.det(streichmatrix)
         
-print(f"Die Adjungierte der Matrix {A} \n lautet \n {Adj}")
+print(f"Die Adjungierte der Matrix \n {A} \n lautet \n {Adj}")
