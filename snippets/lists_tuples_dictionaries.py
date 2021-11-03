@@ -8,7 +8,7 @@ for s in li:
 
 # mit Aufzählung der Elemente    
 for n, s in enumerate(li):
-    print(f"Das {n+1}. Listeneintrag lautet: {s}")
+    print(f"Der {n+1}. Listeneintrag lautet: {s}")
 
 
 # Elegante Listenerzeugung
@@ -20,7 +20,7 @@ week_day_dict = {1: 'Montag', 2: 'Dienstag', 3: 'Mittwoch', 4: 'Donnerstag', 5: 
 print(f"Der 4. Wochentag ist der {week_day_dict[4]}")
 
 deutsch_franz_dict = {'gelb': 'jaune', 'rot': 'rouge', 'blau': 'bleu', 'grün': 'vert', 'weiss': 'blanche'}
-franz_engl_dict = {'jaune': 'yellow', 'rouge': 'red', 'bleu': 'blue', 'vert': 'green', 'weiss': 'blanche'}
+franz_engl_dict = {'jaune': 'yellow', 'rouge': 'red', 'bleu': 'blue', 'vert': 'green', 'blanche': 'white'}
 
 for col in deutsch_franz_dict:
     print(f"""
