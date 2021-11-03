@@ -25,6 +25,6 @@ for i in range(n):
         streichmatrix[i:,:j] = A[i+1:,:j]              # rechts oben
         streichmatrix[:i,j:] = A[:i,j+1:]              # links unten
         streichmatrix[i:,j:] = A[i+1:,j+1:]            # rechts unten
-        Adj[i,j]=(-1)**(i+j)*np.linalg.det(streichmatrix)
+        Adj[j,i]=(-1)**(i+j)*np.linalg.det(streichmatrix)
         
 print(f"Die Adjungierte der Matrix \n {A} \n lautet \n {Adj}")
