@@ -12,4 +12,4 @@ name = {
         'leu': 'Barbara Leuenberger'
 }
 
-list = [k for k in dict.keys() if "ö" in name[k] or "ü" in name[k] or "ä" in name[k]]
+list = [k for k in name.keys() if "ö" in name[k] or "ü" in name[k] or "ä" in name[k]]
