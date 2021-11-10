@@ -48,3 +48,13 @@ Siehe [Seite zu Git](GIT.md)
 - Textformattierung (f-Methode)
 - if-Abfrage
 - Schleifen (while, for)
+
+## 2. Teil
+- Berechnungen mit Ganzzahlen, Fliesskommazahlen und komplexen Zahlen
+- Iterative Verfahren zur Berechnung von Näherungswerten
+- Das numpy Modul und Berechnungen mit Vektoren und Matrizen
+- Fraktale
+
+## 3. Teil
+- Listen
+- Wörterbücher
