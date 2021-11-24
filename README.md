@@ -58,3 +58,7 @@ Siehe [Seite zu Git](GIT.md)
 ## 3. Teil
 - Listen
 - Wörterbücher
+
+
+# Lernziele
+- [Prüfung 1](Lernziele_Programmieren_I.pdf)
