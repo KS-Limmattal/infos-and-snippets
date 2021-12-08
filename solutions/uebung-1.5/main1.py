@@ -21,7 +21,7 @@ def anzahlPaare(n):
     :param n: Anzahl Objekte
     :return: Anzahl möglicher Paare
     """
-    return n*(n+1)//2
+    return n*(n-1)//2
 
 import numpy as np
 def summeAbsEigval(A):
