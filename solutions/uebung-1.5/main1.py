@@ -31,7 +31,7 @@ def summeAbsEigval(A):
     :param A: Die gegebene Matrix
     :return: Die Summe aller Eigenwert-Beträge
     """
-    eig, val = np.linalg.eig(A)
+    eig, vec = np.linalg.eig(A)
     return np.sum(abs(eig))
     
 
