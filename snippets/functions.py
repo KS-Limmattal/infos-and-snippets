@@ -29,14 +29,14 @@ print(g(-1))
 print(g(0))
 
 
-# Einschränkung des Datentyps
+# Kommentierung des Datentyps
 
 def h(n: int) -> float:
     return n/4
 
 print(h(7))
 print(h(8))
-# Der Funktion h darf nur eine Ganzzahl (int) übergeben werden, keine Matrix oder dergleichen
+# Der Funktion h soll nur eine Ganzzahl (int) übergeben werden, keine Matrix oder dergleichen
 
 """ 
 Allgemeiner: Eine Funktion in Python ist eine Folge von Anweisungen, die optional einen oder mehrere Werte 
