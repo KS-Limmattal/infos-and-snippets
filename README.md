@@ -41,6 +41,7 @@ Siehe [Seite zu Git](GIT.md)
 - [Aufgabe 3](https://classroom.github.com/a/RbFJzWco)
 - [Aufgabe 4](https://classroom.github.com/a/IEGbjsXP)
 - [Aufgabe 5](https://classroom.github.com/a/T9U1fImq)
+- [Aufgabe 6](https://classroom.github.com/a/a53atBZ3)
 
 # Themen
 
@@ -60,6 +61,12 @@ Siehe [Seite zu Git](GIT.md)
 - Listen
 - Wörterbücher
 
+# 4. Teil
+- Funktionen
+
+# 5. Teil
+- Klassen
+- Überladung von Operatoren
 
 # Lernziele
 - [Prüfung 1](Lernziele_Programmieren_I.pdf)
