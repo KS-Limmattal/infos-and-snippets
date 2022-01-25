@@ -71,5 +71,6 @@ Siehe [Seite zu Git](GIT.md)
 # Lernziele
 - [Prüfung 1](Lernziele_Programmieren_I.pdf)
 
-# Link zu Prüfung
+# Link zu Prüfungen
 - [Prüfung 1](https://classroom.github.com/a/MCpbh9aF)
+- [Prüfung 2](https://classroom.github.com/a/Z0405--O)
