@@ -42,6 +42,7 @@ Siehe [Seite zu Git](GIT.md)
 - [Aufgabe 4](https://classroom.github.com/a/IEGbjsXP)
 - [Aufgabe 5](https://classroom.github.com/a/T9U1fImq)
 - [Aufgabe 6](https://classroom.github.com/a/a53atBZ3)
+- [Aufgabe 7](https://classroom.github.com/a/xWo_pFu_)
 
 # Themen
 
