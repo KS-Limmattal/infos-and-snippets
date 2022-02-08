@@ -100,6 +100,23 @@ while True:
 
         # Weitere Reaktionen auf Benutzereingaben
 
+        # Schlaegerbewegung rauf/runter    
+        if event.type == pygame.KEYDOWN:
+            print("Taste wurde gedrückt")
+            for schlaeger in schlaegerListe:
+                if event.key == schlaeger.tasteHoch:
+                    schlaeger.bewegung = -6
+                elif event.key == schlaeger.tasteRunter:
+                    schlaeger.bewegung = 6
+
+        # Stoppen der Schlaegerbewegung
+        if event.type == pygame.KEYUP:
+            print("Spieler hat Taste losgelassen")
+            for schlaeger in schlaegerListe:
+                if event.key == schlaeger.tasteHoch or event.key == schlaeger.tasteRunter:
+                    schlaeger.bewegung = 0
+
+
     # Spiellogik (z.B. Bewegungen der Spieler)
 
     # Spielfeld löschen (mit weissem oder schwarzem Hintergrund)
