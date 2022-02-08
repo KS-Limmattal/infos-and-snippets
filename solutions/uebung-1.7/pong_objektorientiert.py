@@ -76,6 +76,13 @@ class Schlaeger:
     def draw(self, screen):
         return pygame.draw.rect(screen, WEISS, [self.x, self.y, 20, self.hoehe])
 
+def clamp(x,min,max):
+    if x < min:
+        return min
+    if x > max:
+        return max
+    return x
+
 # Spielobjekte (Instanzen) erzeugen. Gleichartige Spielobjekte können in Listen abgelegt werden.
 
 ball = Ball(50, 30, 4, 4, 20)
@@ -119,6 +126,18 @@ while True:
 
     # Spiellogik (z.B. Bewegungen der Spieler)
 
+    for schlaeger in schlaegerListe:
+        schlaeger.y+=schlaeger.bewegung
+        schlaeger.y=clamp(schlaeger.y, 0, FENSTERHOEHE - schlaeger.hoehe)
+        
+    ball.x+=ball.vx
+    ball.y+=ball.vy
+    if ball.x != clamp(ball.x, 0, FENSTERBREITE - ball.d):
+        ball.vx *= -1
+    if ball.y != clamp(ball.y, 0, FENSTERHOEHE - ball.d):
+        ball.vy *= -1
+        
+        
     # Spielfeld löschen (mit weissem oder schwarzem Hintergrund)
     fenster.fill(WEISS)
 
