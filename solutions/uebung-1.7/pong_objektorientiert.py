@@ -78,6 +78,11 @@ class Schlaeger:
 
 # Spielobjekte (Instanzen) erzeugen. Gleichartige Spielobjekte können in Listen abgelegt werden.
 
+ball = Ball(50, 30, 4, 4, 20)
+
+schlaegerListe = [Schlaeger(20, 20, 0, pygame.K_UP,pygame.K_DOWN, 40), 
+                Schlaeger(FENSTERBREITE - 40, 20, 0, pygame.K_w,pygame.K_s, 400)]
+
 # Definieren und öffnen eines neuen Fensters
 fenster = pygame.display.set_mode((FENSTERBREITE, FENSTERHOEHE))
 pygame.display.set_caption("Titel für Fensterkopf")
