@@ -51,6 +51,17 @@ WEISS   = ( 255, 255, 255)
 
 # Hilfsfunktionen und Klassen definieren (z.B. für Spieler, Gegner, Spielfeld etc.)
 
+class Ball:
+    def __init__(self, x, y, vx, vy, d): 
+        self.x = x
+        self.y = y
+        self.vx = vx
+        self.vy = vy
+        self.d = d
+        
+    def draw(self, screen):
+        return pygame.draw.ellipse(screen, WEISS, [self.x, self.y, self.d, self.d])
+
 # Spielobjekte (Instanzen) erzeugen. Gleichartige Spielobjekte können in Listen abgelegt werden.
 
 # Definieren und öffnen eines neuen Fensters
