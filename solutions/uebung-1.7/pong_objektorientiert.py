@@ -46,6 +46,7 @@ pygame.init()
 # Variablen/KONSTANTEN setzen
 FENSTERBREITE, FENSTERHOEHE = 480, 640
 FPS  = 60   # angepeilt werden ebenso viele Bildschirmaktualisierungen pro Sekunde.
+ROT     = ( 255, 0, 0)
 SCHWARZ = ( 0, 0, 0)
 WEISS   = ( 255, 255, 255)
 
@@ -153,7 +154,11 @@ while True:
             ball.x = schlaeger.start
             schlaeger.hoehe -= 5
             schlaeger.score += 1
-            
+    
+    font = pygame.font.SysFont(None, 70)
+    text = font.render(f"Stand: {schlaegerListe[0].score} : {schlaegerListe[1].score}", True, ROT)
+    fenster.blit(text, [100, 10])    
+
     # Fenster aktualisieren
     pygame.display.flip()
     clock.tick(FPS)
