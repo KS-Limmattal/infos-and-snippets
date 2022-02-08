@@ -62,6 +62,20 @@ class Ball:
     def draw(self, screen):
         return pygame.draw.ellipse(screen, WEISS, [self.x, self.y, self.d, self.d])
 
+class Schlaeger:
+    def __init__(self, x, y, bewegung, tasteHoch, tasteRunter, start, hoehe=220, score=0):
+        self.x = x
+        self.y = y
+        self.bewegung = bewegung
+        self.tasteHoch = tasteHoch
+        self.tasteRunter = tasteRunter
+        self.start = start
+        self.hoehe = hoehe
+        self.score = score
+        
+    def draw(self, screen):
+        return pygame.draw.rect(screen, WEISS, [self.x, self.y, 20, self.hoehe])
+
 # Spielobjekte (Instanzen) erzeugen. Gleichartige Spielobjekte können in Listen abgelegt werden.
 
 # Definieren und öffnen eines neuen Fensters
