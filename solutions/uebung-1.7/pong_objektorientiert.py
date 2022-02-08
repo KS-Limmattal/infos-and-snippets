@@ -44,7 +44,7 @@ from pygame.locals import *
 pygame.init()
 
 # Variablen/KONSTANTEN setzen
-FENSTERBREITE, FENSTERHOEHE = 800, 600
+FENSTERBREITE, FENSTERHOEHE = 480, 640
 FPS  = 60   # angepeilt werden ebenso viele Bildschirmaktualisierungen pro Sekunde.
 SCHWARZ = ( 0, 0, 0)
 WEISS   = ( 255, 255, 255)
@@ -139,10 +139,21 @@ while True:
         
         
     # Spielfeld löschen (mit weissem oder schwarzem Hintergrund)
-    fenster.fill(WEISS)
+    fenster.fill(SCHWARZ)
 
     # Aktualisiertes Spielfeld/Figuren zeichnen
 
+    kreis = ball.draw(fenster)
+
+    for schlaeger in schlaegerListe:
+        rechteck = schlaeger.draw(fenster)
+        if rechteck.colliderect(kreis):
+            print("Zusammenstoß")
+            ball.vx *= -1
+            ball.x = schlaeger.start
+            schlaeger.hoehe -= 5
+            schlaeger.score += 1
+            
     # Fenster aktualisieren
     pygame.display.flip()
     clock.tick(FPS)
