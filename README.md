@@ -1,13 +1,13 @@
 # Installation
 
 ## MS Windows
-.
-Empfohlen wird die portable Python-Installation [WinPython](https://github.com/winpython/winpython), Version 3.9.5. vom 4. Juli 2021 Diese enthält alle Module (inklusive math, cmath, numpy, pygame), die wir in diesem Semester benötigen werden. WinPython enthält die Python-Programmierumgebung Spyder, mit der wir arbeiten werden.
 
-Für eine leistungsfähige Konsole und Arbeit mit `Git`-Repositories wird [PortableGit](https://github.com/git-for-windows/git) empfohlen, Version 2.33.0.2 vom 17. August 2021. 
+Empfohlen wird die portable Python-Installation [WinPython](https://github.com/winpython/winpython), Version 3.9.10. (Direktlink [Winpython64-3.9.10.0.exe](https://github.com/winpython/winpython/releases/download/4.6.20220116/Winpython64-3.9.10.0.exe)) vom 25. Januar 2022. Diese enthält alle Module (inklusive math, cmath, numpy, pygame, PyQt5), die wir in diesem Semester benötigen werden. WinPython enthält die Python-Programmierumgebung Spyder, mit der wir arbeiten werden.
+
+Für eine leistungsfähige Konsole und Arbeit mit `Git`-Repositories wird [PortableGit](https://github.com/git-for-windows/git) empfohlen, Version 2.35.1.2 (Direktlink [PortableGit-2.35.1.2-64-bit.7z.exe](https://github.com/git-for-windows/git/releases/download/v2.35.1.windows.2/PortableGit-2.35.1.2-64-bit.7z.exe)) vom 29. Januar 2022. 
 
 PortableGit soll in einen Ordner `PortableGit` im Ordner installiert werden, in welchem bereits WinPython installiert ist (z.B. im Wurzel-Verzeichnis `D:` oder `E:` für ein USB-Stick). Git wird mittels der
-Kommandozeile `git-bash` verwendet. Um `gitbash` direkt aus dem Ordner auszuführen, welches `WinPython` und `PortableGit` enthält, wird am besten von `git-bash.exe` mittels Rechtsklick "Verknüpfung erstellen" eine Verknüpfung erstellt. Die Verknpüfung wird nun ins Verzeichnis mit `WinPython` und `PortableGit` verschoben. Ausserdem erstellen wir in diesem Verzeichnis einen Ordner `MyCode`, in welcher der eigene Python Code platziert wird.
+Kommandozeile `git-bash` verwendet. Um `git-bash` direkt aus dem Ordner auszuführen, welches `WinPython` und `PortableGit` enthält, wird am besten von `git-bash.exe` mittels Rechtsklick "Verknüpfung erstellen" eine Verknüpfung erstellt. Die Verknpüfung wird nun ins Verzeichnis mit `WinPython` und `PortableGit` verschoben. Ausserdem erstellen wir in diesem Verzeichnis einen Ordner `MyCode`, in welcher der eigene Python Code platziert wird.
 
 Die Ordner-Struktur sollte nun wie folgt aussehen:
 ![grafik](https://user-images.githubusercontent.com/40485433/131446510-0f393315-001b-4161-b1a6-75ff74f86606.png)
@@ -34,8 +34,9 @@ Sowohl `python3`, der Paket-Installer `pip3` wie auch die Programmierumgebung `s
 
 Siehe [Seite zu Git](GIT.md)
 
+# Inhalte des letzten Semesters
 
-# Aufgaben
+## Aufgaben
 - [Aufgabe 1](https://classroom.github.com/a/UNwqoiUj)
 - [Aufgabe 2](https://classroom.github.com/a/c8MHVeSV)
 - [Aufgabe 3](https://classroom.github.com/a/RbFJzWco)
@@ -44,34 +45,34 @@ Siehe [Seite zu Git](GIT.md)
 - [Aufgabe 6](https://classroom.github.com/a/a53atBZ3)
 - [Aufgabe 7](https://classroom.github.com/a/xWo_pFu_)
 
-# Themen
+## Themen
 
-## 1. Teil 
+### 1. Teil 
 - Eingabe und Ausgabe
 - Textformattierung (f-Methode)
 - if-Abfrage
 - Schleifen (while, for)
 
-## 2. Teil
+### 2. Teil
 - Berechnungen mit Ganzzahlen, Fliesskommazahlen und komplexen Zahlen
 - Iterative Verfahren zur Berechnung von Näherungswerten
 - Das numpy Modul und Berechnungen mit Vektoren und Matrizen
 - Fraktale
 
-## 3. Teil
+### 3. Teil
 - Listen
 - Wörterbücher
 
-# 4. Teil
+## 4. Teil
 - Funktionen
 
-# 5. Teil
+## 5. Teil
 - Klassen
 - Überladung von Operatoren
 
-# Lernziele
+## Lernziele
 - [Prüfung 1](Lernziele_Programmieren_I.pdf)
 
-# Link zu Prüfungen
+## Link zu Prüfungen
 - [Prüfung 1](https://classroom.github.com/a/MCpbh9aF)
 - [Prüfung 2](https://classroom.github.com/a/Z0405--O)
