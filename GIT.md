@@ -10,10 +10,16 @@ Jedes Programmierprojekt wird in einem `Repository` abgelegt. Dies ist ein virtu
 der Dateien des Projekts und Metadata zur Versionskontrolle besteht. Jede substanzielle Code-Änderung 
 wird in einem `Commit` zur Projekt-Geschichte hinzugefügt und mit einer Überschrift betitelt.
 `Github` ist ein internet-basierter Dienst zum Einsatz von `Git`. Beginnt man `Github` zu verwenden, sind einige Konfigurationsschritte nötig,
-die im folgenden [Video](https://www.youtube.com/watch?v=kHkQnuYzwoo) erklärt werden. Eine weitere empfehlenswerte Einstellung lautet:
+die im folgenden [Video](https://www.youtube.com/watch?v=kHkQnuYzwoo) erklärt werden. Weitere empfehlenswerte Einstellungen lauten:
 ```
 git config --global pull.rebase true
 ```
+und
+
+```
+git config --global credential.helper manager-core
+```
+
 ## Projekt-Geschichte
 
 Die Projekt-Geschichte lässt sich mittels 
@@ -66,3 +72,19 @@ Dann tippe im gewünschten Verzeichnis in der Konsole, in welcher du `git` ausf�
 ```
 git clone https://github.com/KS-Limmattal/infos-and-snippets.git
 ```
+
+## Änderungen bereitstellen und veröffentlichen
+
+Anstatt die neusten Code-Dateien auf Github im Web-Interface reinzukopieren und so zu veröffentlichen, lautet der Ablauf aus der Kommandozeile wie folgt:
+
+```
+git add <Dateiname(n)>
+git commit -m "Commit-Nachricht"
+git push
+```
+Dabei sollte im Zweifelsfall vorher mittels
+```
+git fetch --all
+git status
+```
+überprüft werden, ob der aktuelle Zweig im lokalen Repository im selben Zustand wie das Online Repository ist.
