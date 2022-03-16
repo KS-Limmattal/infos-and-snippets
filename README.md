@@ -35,7 +35,7 @@ Sowohl `python3`, der Paket-Installer `pip3` wie auch die Programmierumgebung `s
 Siehe [Seite zu Git](GIT.md)
 
 ## Aufgaben
-- [Gruppenarbeit 1](https://classroom.github.com/a/RgyIJG8b)
+- [Gruppenarbeit 1](https://classroom.github.com/a/GqBAB_UJ)
 
 # Inhalte des letzten Semesters
 
