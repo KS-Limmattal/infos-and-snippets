@@ -14,8 +14,6 @@ class Point3d:
     def dist(self,other):
         v = Vector3d(self.x-other.x, self.y-other.y, self.z-other.z)
         return hypot(v.x, v.y, v.z)
-    def to_json(self):
-        return {"x": self.x, "y": self.y, "z": self.z}
 
 def pointInput(s):
     print(s)

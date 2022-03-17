@@ -16,8 +16,6 @@ class Vector3d:
         return Vector3d(self.x.other.x, self.y-other.y, self.z-other.z)
     def __rmul__(self, s):
         return Vector3d(s*self.x, s*self.y, s*self.z)
-    def to_json(self):
-        return {"x": self.x, "y": self.y, "z": self.z}
 
     
 if __name__ == '__main__':   # wird nur ausgeführt, wenn diese Datei als Skript ausgeführt wird
