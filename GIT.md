@@ -100,11 +100,17 @@ git status
 
 ## Pull Request erzeugen und annehmen
 
-Hat man den feature- oder bugfix-branch aufs Remote Repository gepusht, so kann man auf Github (unter `Pull Requests`) nun einen Pull Request erzeugen `Compare & Create Pull Request`. Diesen können Gruppenmitglieder studieren und bei Einverständnis aller Gruppenmitglieder in den `main` branch integrieren. Verwende dazu `Rebase and Merge` im Web-Interface. Der `main` branch sollte immer in funktionablem Zustand sein. 
+Hat man den feature- oder bugfix-branch aufs Remote Repository gepusht, so kann man auf Github (unter `Pull Requests`) nun einen Pull Request erzeugen `Compare & Create Pull Request`. 
+![grafik](https://user-images.githubusercontent.com/40485433/159671390-9dabd717-49bf-43c5-86ad-33fb27d51492.png)
 
-## Änderungen vom Remote Repository herunterladen
+Diesen können Gruppenmitglieder studieren und bei Einverständnis aller Gruppenmitglieder in den `main` branch integrieren. Verwende dazu `Rebase and Merge` im Web-Interface. 
+![grafik](https://user-images.githubusercontent.com/40485433/159671525-ea510302-58a0-461d-a59b-f33b7ad6c45e.png)
 
-Wenn man einen neuen Zweig erstellt und daran arbeitet, so ist es häufig der Fall, dass der Zweig `main`, von welchem damals abgezweigt wurde, nicht mehr den neuesten Stand widerspiegelt, weil inzwischen schon einige `commits` zum `main` branch auf dem Remote Repository hinzugeüfgt worden sind. Möchte man diese Änderungen in den aktuellen Zweig integrieren, so geht das mit 
+Der `main` branch sollte immer in funktionablem Zustand sein. 
+
+## Änderungen vom Remote main branch integrieren
+
+Wenn man einen neuen Zweig erstellt und daran arbeitet, so ist es häufig der Fall, dass der Zweig `main`, von welchem damals abgezweigt wurde, nicht mehr den neuesten Stand widerspiegelt, weil inzwischen schon einige `commits` zum `main` branch auf dem Remote Repository hinzugeüfgt worden sind. Möchte man diese Änderungen in den aktuellen Zweig integrieren, so geht das mittels des Befehls
 
 ```
 git rebase origin/main
