@@ -26,7 +26,7 @@ Die Projekt-Geschichte lässt sich mittels
 ```
 git log
 ```
-anzeigen. Zum Beispiel sieht die Projekt-Geschichte zum infos-and-snippets Repository momentan wie folgt aus:
+anzeigen. Zum Beispiel hat die Projekt-Geschichte zum infos-and-snippets Repository mal wie folgt ausgesehen:
 
 ![grafik](https://user-images.githubusercontent.com/40485433/131213722-0036b625-5480-4bc8-9c74-214081c4cc6d.png)
 
@@ -36,7 +36,7 @@ Es ist daraus also ersichtlich, wer wann welche Commits gemacht hat und was dami
 
 Der aktuelle Zustand des Git Repositories lässt sich mittels
 ```
-git log
+git status
 ```
 anzeigen. Hier wird ersichtlich, ob es geänderte Dateien gibt, ob diese bereits für einen neuen Commit vorgemerkt sind (grün statt rot) und ob gerade ein
 "Merge" oder "Rebase" Prozess zur Zusammenführung von Dateien im Gange ist. Ausserdem wird der aktuelle Branch (Zweig) angezeigt, auf welchem gearbeitet wird.
@@ -72,6 +72,15 @@ Dann tippe im gewünschten Verzeichnis in der Konsole, in welcher du `git` ausf�
 ```
 git clone https://github.com/KS-Limmattal/infos-and-snippets.git
 ```
+## Zweig erstellen und auschecken
+
+Soll ein neues feature oder ein neuer bugfix erstellt werden, so geschieht die Entwicklung in einem neuen `branch` (niemals im `main` branch).
+Das Erstellen und Auschecken lässt sich in einem einzigen Befehl schreiben:
+
+```
+git checkout -b <branchname>
+```
+Achte darauf, dass du dich vorher auf dem `main` branch befindest, denn sonst wird von einem anderen `branch` abgezweigt.
 
 ## Änderungen bereitstellen und veröffentlichen
 
@@ -87,4 +96,16 @@ Dabei sollte im Zweifelsfall vorher mittels
 git fetch --all
 git status
 ```
-überprüft werden, ob der aktuelle Zweig im lokalen Repository im selben Zustand wie das Online Repository ist.
+überprüft werden, ob der aktuelle Zweig im lokalen Repository im selben Zustand wie das Online Repository ist und ob man sich auf dem richtigen `branch` befindet (es sollte beim pushen insbesondere niemals der `main` branch sein).
+
+## Pull Request erzeugen und annehmen
+
+Hat man den feature- oder bugfix-branch aufs Remote Repository gepusht, so kann man auf Github (unter `Pull Requests`) nun einen Pull Request erzeugen `Compare & Create Pull Request`. Diesen können Gruppenmitglieder studieren und bei Einverständnis aller Gruppenmitglieder in den `main` branch integrieren. Verwende dazu `Rebase and Merge` im Web-Interface. Der `main` branch sollte immer in funktionablem Zustand sein. 
+
+## Änderungen vom Remote Repository herunterladen
+
+Wenn man einen neuen Zweig erstellt und daran arbeitet, so ist es häufig der Fall, dass der Zweig `main`, von welchem damals abgezweigt wurde, nicht mehr den neuesten Stand widerspiegelt, weil inzwischen schon einige `commits` zum `main` branch auf dem Remote Repository hinzugeüfgt worden sind. Möchte man diese Änderungen in den aktuellen Zweig integrieren, so geht das mit 
+
+`` 
+git rebase origin/main
+```
