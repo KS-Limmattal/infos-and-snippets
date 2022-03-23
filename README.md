@@ -36,6 +36,7 @@ Siehe [Seite zu Git](GIT.md)
 
 ## Aufgaben
 - [Gruppenarbeit 1](https://classroom.github.com/a/GqBAB_UJ)
+- [Gruppenarbeit 2](https://classroom.github.com/a/p_UwpFXa)
 
 ## Alte Inhalte
 
