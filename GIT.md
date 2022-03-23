@@ -93,7 +93,7 @@ git push
 ```
 Dabei sollte im Zweifelsfall vorher mittels
 ```
-git fetch --all
+git fetch
 git status
 ```
 überprüft werden, ob der aktuelle Zweig im lokalen Repository im selben Zustand wie das Online Repository ist und ob man sich auf dem richtigen `branch` befindet (es sollte beim pushen insbesondere niemals der `main` branch sein).
@@ -106,6 +106,6 @@ Hat man den feature- oder bugfix-branch aufs Remote Repository gepusht, so kann 
 
 Wenn man einen neuen Zweig erstellt und daran arbeitet, so ist es häufig der Fall, dass der Zweig `main`, von welchem damals abgezweigt wurde, nicht mehr den neuesten Stand widerspiegelt, weil inzwischen schon einige `commits` zum `main` branch auf dem Remote Repository hinzugeüfgt worden sind. Möchte man diese Änderungen in den aktuellen Zweig integrieren, so geht das mit 
 
-`` 
+```
 git rebase origin/main
 ```
