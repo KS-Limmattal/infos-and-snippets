@@ -11,3 +11,17 @@ Klasse "Ghost", Oberklasse von "Figur" mit zusätzlichen
                                Position auf leerem Spielfeld zurücklegen muss)
 """
 
+import Figur
+from random import choice
+
+class Ghost(Figur):
+    def __init__(self, mustGoHome=False, isInCage=True):
+        super().__init__()
+        self.mustGoHome = mustGoHome
+        self.isInCage = isInCage
+        
+    def chooseDir(self):
+        return choice(["Up", "Down", "Left", "Right"])
+
+    def computeSteps(self, x, y):
+        return abs(self.x-x) + abs(self.y-y)
