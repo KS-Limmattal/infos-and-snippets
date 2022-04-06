@@ -17,7 +17,7 @@ Durch Rechtklick auf die Verknüpfung auf `git-bash.exe` können wir das Verzeic
 
 ## MacOS
 
-Python3 und pip3 sind üblicherweise vorinstalliert. Die Programmierumgebung `spyder` erhält man auf [der Spyder Installationsseite](https://docs.spyder-ide.org/current/installation.html)
+Python3 und pip3 (Paket-Installer) sind üblicherweise vorinstalliert. Die Programmierumgebung `spyder` erhält man auf [der Spyder Installationsseite](https://docs.spyder-ide.org/current/installation.html)
 
 Ein Terminal gibt es unter MacOS vorintalliert. Um `Git` zu installieren, kann man im Terminal `git` eingeben und wird durch die Installation geführt.
 
